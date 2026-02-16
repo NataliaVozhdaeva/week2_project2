@@ -12,8 +12,26 @@
             color: #333;
             line-height: 1.6;
         }
+
+        /* Navigation */
+        nav {
+            background: #ff4081;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         header {
             background: url('https://via.placeholder.com/1200x500?text=About+Us+Banner') no-repeat center/cover;
+            background-size: cover;
             height: 50vh;
             color: white;
             display: flex;
@@ -25,6 +43,7 @@
             font-size: 3rem;
             margin: 0;
         }
+
         .container {
             max-width: 1000px;
             margin: auto;
@@ -45,32 +64,52 @@
             border-radius: 50%;
             margin-bottom: 10px;
         }
+
+        /* Sign Up / Sign In Form */
+        #account {
+            background:#fff0f5;
+            padding:50px 20px;
+            text-align:center;
+        }
+        #account .form-container {
+            max-width:400px;
+            margin:auto;
+            text-align:left;
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+        #account input {
+            width:100%;
+            padding:8px;
+            margin:5px 0 15px 0;
+        }
+        #account button {
+            width:100%;
+            padding:10px;
+            background:#ff4081;
+            color:white;
+            border:none;
+            border-radius:6px;
+            font-size:1rem;
+            cursor:pointer;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background: #f2f2f2;
         }
-        nav {
-            background: #ff4081;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
 
+<!-- Navigation -->
 <nav>
     <a href="index.html">Home</a>
     <a href="aboutUs.html">About Us</a>
+    <a href="products.html">Products</a>
 </nav>
 
 <header>
@@ -79,6 +118,7 @@
 </header>
 
 <div class="container">
+    <!-- Our Story -->
     <section class="story">
         <h2>Our Story</h2>
         <p>
@@ -90,6 +130,7 @@
         <img src="https://via.placeholder.com/800x400?text=Flower+Shop+Interior" alt="Flower shop interior" style="width:100%; border-radius:12px; margin-top:20px;">
     </section>
 
+    <!-- Mission -->
     <section class="mission">
         <h2>Our Mission</h2>
         <p>
@@ -99,26 +140,66 @@
         </p>
     </section>
 
-    <section class="team">
+    <!-- Team -->
+    <section class="team-section">
         <h2>Meet Our Team</h2>
-        <div class="member">
-            <img src="https://via.placeholder.com/200?text=Alice" alt="Alice">
-            <h3>Alice Bloom</h3>
-            <p>Founder & Head Florist</p>
-        </div>
-        <div class="member">
-            <img src="https://via.placeholder.com/200?text=Tom" alt="Tom">
-            <h3>Tom Petal</h3>
-            <p>Shop Manager</p>
-        </div>
-        <div class="member">
-            <img src="https://via.placeholder.com/200?text=Lily" alt="Lily">
-            <h3>Lily Green</h3>
-            <p>Florist Assistant</p>
+        <div class="team">
+            <div class="member">
+                <img src="https://via.placeholder.com/200?text=Alice" alt="Alice">
+                <h3>Alice Bloom</h3>
+                <p>Founder & Head Florist</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/200?text=Tom" alt="Tom">
+                <h3>Tom Petal</h3>
+                <p>Shop Manager</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/200?text=Lily" alt="Lily">
+                <h3>Lily Green</h3>
+                <p>Florist Assistant</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Sign Up / Sign In -->
+    <section id="account">
+        <h2>Sign Up / Sign In</h2>
+        <p>Create your account or log in to stay updated with our flower deals</p>
+        <div class="form-container">
+            <!-- Sign Up -->
+            <form id="signUpForm">
+                <h3>Sign Up</h3>
+                <label for="signup-name">Name:</label><br>
+                <input type="text" id="signup-name" name="signup-name" placeholder="Your Name"><br>
+
+                <label for="signup-email">Email:</label><br>
+                <input type="email" id="signup-email" name="signup-email" placeholder="Email Address"><br>
+
+                <label for="signup-password">Password:</label><br>
+                <input type="password" id="signup-password" name="signup-password" placeholder="Password"><br>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <hr style="margin:30px 0; border:none; border-top:1px solid #ddd;">
+
+            <!-- Sign In -->
+            <form id="signInForm">
+                <h3>Sign In</h3>
+                <label for="signin-email">Email:</label><br>
+                <input type="email" id="signin-email" name="signin-email" placeholder="Email Address"><br>
+
+                <label for="signin-password">Password:</label><br>
+                <input type="password" id="signin-password" name="signin-password" placeholder="Password"><br>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
         <h2>Contact Us</h2>
         <p>
             📍 123 Flower Street, Wellington, NZ<br>

@@ -34,7 +34,7 @@
             background-size: cover;
             color: white;
             text-align: center;
-            padding: 80px 20px; /* replaces fixed height */
+            padding: 80px 20px;
         }
         header h1 {
             font-size: 3rem;
@@ -81,16 +81,42 @@
             border-radius: 12px;
         }
 
+        /* Sign Up / Sign In Form */
+        #account {
+            background:#fff0f5;
+            padding:50px 20px;
+            text-align:center;
+        }
+        #account .form-container {
+            max-width:400px;
+            margin:auto;
+            text-align:left;
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+        #account input {
+            width:100%;
+            padding:8px;
+            margin:5px 0 15px 0;
+        }
+        #account button {
+            width:100%;
+            padding:10px;
+            background:#ff4081;
+            color:white;
+            border:none;
+            border-radius:6px;
+            font-size:1rem;
+            cursor:pointer;
+        }
+
         /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             background: #f2f2f2;
-        }
-
-        /* Button */
-        button {
-            cursor: pointer;
         }
     </style>
 </head>
@@ -100,18 +126,16 @@
 <nav>
     <a href="index.html">Home</a>
     <a href="aboutUs.html">About Us</a>
+    <a href="products.html">Products</a>
 </nav>
 
 <!-- Header -->
 <header>
-    <div class="header-content">
-        <h1>Blossom & Co.</h1>
-        <p>Your neighbourhood flower shop</p>
-        <button onclick="document.location='#products'">Our Bestsellers</button>
-    </div>
+    <h1>Blossom & Co.</h1>
+    <p>Your neighbourhood flower shop</p>
+    <button onclick="document.location='#products'">Our Bestsellers</button>
 </header>
 
-<!-- Page Content -->
 <div class="container">
     <!-- Intro -->
     <section class="intro">
@@ -132,7 +156,7 @@
                 <p>Perfect for anniversaries and special moments.</p>
             </div>
             <div class="product-item">
-                <img src="https://via.placeholder.com/350x250?text=Tulips" alt="Tulips">
+                <img src="https://via.placeholder.com/350x250?text=Tulips" alt="Spring Tulips">
                 <h3>Spring Tulips</h3>
                 <p>Brighten your home with seasonal tulips.</p>
             </div>
@@ -144,6 +168,42 @@
         </div>
     </section>
 
+    <!-- Sign Up / Sign In -->
+    <section id="account">
+        <h2>Sign Up / Sign In</h2>
+        <p>Create your account or log in to stay updated with our flower deals</p>
+        <div class="form-container">
+            <!-- Sign Up -->
+            <form id="signUpForm">
+                <h3>Sign Up</h3>
+                <label for="signup-name">Name:</label><br>
+                <input type="text" id="signup-name" name="signup-name" placeholder="Your Name"><br>
+
+                <label for="signup-email">Email:</label><br>
+                <input type="email" id="signup-email" name="signup-email" placeholder="Email Address"><br>
+
+                <label for="signup-password">Password:</label><br>
+                <input type="password" id="signup-password" name="signup-password" placeholder="Password"><br>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <hr style="margin:30px 0; border:none; border-top:1px solid #ddd;">
+
+            <!-- Sign In -->
+            <form id="signInForm">
+                <h3>Sign In</h3>
+                <label for="signin-email">Email:</label><br>
+                <input type="email" id="signin-email" name="signin-email" placeholder="Email Address"><br>
+
+                <label for="signin-password">Password:</label><br>
+                <input type="password" id="signin-password" name="signin-password" placeholder="Password"><br>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section class="contact">
         <h2>Contact Us</h2>
@@ -152,7 +212,6 @@
             📞 (04) 555‑0123<br>
             ✉️ <a href="mailto:hello@blossomco.nz">hello@blossomco.nz</a>
         </p>
-        <button onclick="window.location.href='mailto:hello@blossomco.nz'">Send Us an Email</button>
     </section>
 </div>
 
