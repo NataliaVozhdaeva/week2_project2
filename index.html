@@ -2,9 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HW project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom & Co. Flower Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: url('https://images.pexels.com/photos/35600/flowers-nature-garden-flora.jpg?auto=compress&cs=tinysrgb&w=1200') no-repeat center/cover;
+            height: 70vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .intro, .products, .contact {
+            margin-bottom: 60px;
+        }
+        .products img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 12px;
+        }
+        .products .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-item {
+            text-align: center;
+            max-width: 350px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+        button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
-    Start project page
+
+<header>
+    <h1>Blossom & Co.</h1>
+    <p>Your neighbourhood flower shop</p>
+    <button onclick="document.location='#products'">Our Bestsellers</button>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>Welcome to Blossom & Co.</h2>
+        <p>
+            At Blossom & Co., we bring beauty and joy to your life with fresh, hand-picked flowers every day.
+            Whether you’re celebrating love, friendship, or just want to brighten someone’s day, we have the perfect bouquet for you.
+        </p>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Featured Flowers</h2>
+        <div class="grid">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Roses Bouquet">
+                <h3>Red Roses Bouquet</h3>
+                <p>Perfect for anniversaries and special moments.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tulips">
+                <h3>Spring Tulips</h3>
+                <p>Brighten your home with seasonal tulips.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mixed Floral Arrangement">
+                <h3>Mixed Floral Arrangement</h3>
+                <p>A vibrant mix for any celebration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>
+            📍 123 Flower Street, Wellington, NZ<br>
+            📞 (04) 555‑0123<br>
+            ✉️ <a href="mailto:hello@blossomco.nz">hello@blossomco.nz</a>
+        </p>
+        <button onclick="window.location.href='mailto:hello@blossomco.nz'">Send Us an Email</button>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Blossom & Co. – Fresh Flowers Every Day
+</footer>
+
 </body>
 </html>
