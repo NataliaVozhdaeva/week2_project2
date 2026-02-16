@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalog – Blossom & Co.</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    /* Navigation */
+    nav {
+        background: #ff4081;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    /* Catalog grid */
+    .catalog-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .catalog-item {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .catalog-item img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .catalog-item button {
+        background: #ff4081;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #f2f2f2;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="catalog.html">Catalog</a>
+</nav>
+
+<div class="container">
+    <h1>Flower Catalog</h1>
+    <p style="text-align: center;">Browse our full catalog of flowers and arrangements</p>
+
+    <section class="catalog-grid">
+        <div class="catalog-item">
+            <img src="https://picsum.photos/300/200?random=11" alt="Flower Bouquet 1">
+            <h3>Rose & Lily Bouquet</h3>
+            <p>A fragrant mix of roses and lilies.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="catalog-item">
+            <img src="https://picsum.photos/300/200?random=12" alt="Flower Bouquet 2">
+            <h3>Sunflower Surprise</h3>
+            <p>Bright sunflowers to lift your spirits.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="catalog-item">
+            <img src="https://picsum.photos/300/200?random=13" alt="Flower Bouquet 3">
+            <h3>Orchid Elegance</h3>
+            <p>Elegant orchids for special moments.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="catalog-item">
+            <img src="https://picsum.photos/300/200?random=14" alt="Flower Bouquet 4">
+            <h3>Pastel Petals</h3>
+            <p>Soft pastel flowers for gentle occasions.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="catalog-item">
+            <img src="https://picsum.photos/300/200?random=15" alt="Flower Bouquet 5">
+            <h3>Wild Bloom Mix</h3>
+            <p>A wild mix of seasonal flowers.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="catalog-item">
+            <img src="https://picsum.photos/300/200?random=16" alt="Flower Bouquet 6">
+            <h3>Spring Blossom Set</h3>
+            <p>Colorful blossoms inspired by spring.</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Blossom & Co. – Fresh Flowers Every Day
+</footer>
+
+</body>
+</html>
